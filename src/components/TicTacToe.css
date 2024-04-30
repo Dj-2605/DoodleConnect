@@ -1,0 +1,32 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px; /* Optional gap between squares */
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black; /* Board border */
+  padding: 10px; /* Padding around the board */
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 2px solid black;
+  font-size: 36px; /* Font size for 'X' and 'O' */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.square:hover {
+  background-color: lightgray; /* Hover effect */
+}
+
+.game-info {
+  text-align: center; /* Center align text */
+  font-size: 20px; /* Increase font size for readability */
+}
